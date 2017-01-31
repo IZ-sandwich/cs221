@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-Wall -O3
+CFLAGS=-Wall -O3 -g
 PROG=LQueue_driver
 OBJS=LQueue_driver.o LQueue.o
 

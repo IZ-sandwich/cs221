@@ -127,3 +127,70 @@ void Queue::dequeue()
    else
       cerr << "*** Queue is empty -- can't remove a value ***\n";
 }
+
+//--- Definition of move_to_front()
+void Queue::move_to_front(QueueElement key) {
+	if (!empty())
+	{
+		Node* temp_prev = myFront;
+		Node* temp = myFront;
+		if (temp->data == key) {
+			return;
+		}
+		while (temp->next != NULL) {
+			if (temp->data == key) {
+				temp_prev->next = temp->next;
+				temp->next = myFront;
+				myFront = temp;
+				return;
+			}
+			temp_prev = temp;
+			temp = temp->next;
+		}
+		if (temp->data == key) {
+			temp_prev->next = NULL;
+			temp->next = myFront;
+			myFront = temp;		
+		  return;
+		}
+			
+	}   
+	else
+		cerr << "*** Queue is empty -- can't remove a value ***\n";
+}
+
+//--- Definition of merge_two_queues()
+void Queue::merge_two_queues(Queue q2) {
+  if (!q2.empty()) {
+  	Node * ptrTemp = myFront;
+  	myBack = myFront;
+
+  	while ( ptrTemp != NULL || q2.myFront != NULL) {
+  		if ( ptrTemp == NULL) {
+  			myBack->next = q2.myFront;
+  			myBack = myBack->next;
+  			continue;
+  		}
+  		if ( q2.myFront == NULL) {
+  			myBack->next = ptrTemp;
+  			myBack = myBack->next;
+  			continue;
+  		}
+  		
+  		// do comparison and attach
+  		if (q2.myFront->data > ptrTemp->data) {
+  			myBack->next = ptrTemp;
+  			myBack = myBack->next;
+  			ptrTemp = ptrTemp->next;
+  		} else {
+  			myBack->next = q2.myFront;
+  			myBack = myBack->next;
+  			q2.myFront = q2.myFront->next;
+  		}
+  	}
+  	q2.myFront = NULL;
+  	q2.myBack = NULL;
+  }
+  else
+  	return;
+}

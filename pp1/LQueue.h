@@ -108,7 +108,26 @@ class Queue
         queue is empty; in that case, an error message is displayed 
         and execution allowed to proceed.
   -----------------------------------------------------------------------*/
+	
+	void move_to_front(QueueElement key);
+	/*-----------------------------------------------------------------------
+    A function to search through a queue for a particular key value, and if 
+    found, move the node to the front of the same queue
 
+    Precondition:  Queue is nonempty.
+    Postcondition: Element with the matching key has been moved to the front
+    of the queue
+  -----------------------------------------------------------------------*/
+	
+	void merge_two_queues(Queue q2);
+		/*-----------------------------------------------------------------------
+    A function to merge 2 queues into one while maintaining inherent order and is 
+    called using q1.merge_two_queues(q2) for example.
+    Precondition:  At least one of q1, q2 is nonempty.
+    Postcondition: q1 contains all elements of q1 and q2 while following 
+    original ordering rules.
+  -----------------------------------------------------------------------*/
+	
  private:
    /*** Node class ***/
    class Node
