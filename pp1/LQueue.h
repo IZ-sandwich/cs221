@@ -109,15 +109,14 @@ class Queue
         and execution allowed to proceed.
   -----------------------------------------------------------------------*/
 
-  void merge_two_queues(Queue q);
-  /*-----------------------------------------------------------------------
-    Merge 2 queues while maintaining original ordering rule of elements
-
-    Precondition: q is nonempty.
-    Postcondition: q1 contains all original elements in both q1 and q with 
-		inherent ordering maintained. q is empty.              
+	void move_to_front(QueueElement key);
+	/*-----------------------------------------------------------------------
+    A function to search through a queue for a particular key value, and if 
+    found, move the node to the front of the same queue
+    Precondition:  Queue is nonempty.
+    Postcondition: Element with the matching key has been moved to the front
+    of the queue
   -----------------------------------------------------------------------*/
-
 	
 	void merge_two_queues(Queue &q2);
 		/*-----------------------------------------------------------------------
@@ -126,14 +125,14 @@ class Queue
     Precondition: q1 and q2 are different queues (can appear identical)
     Postcondition: q1 contains all elements of q1 and q2 while following 
     original ordering rules.
+
   -----------------------------------------------------------------------*/
   
   unsigned int getSize() const;
   /*-----------------------------------------------------------------------
     Returns the size of the queue;
-    
-		Precondition: None
-    Postcondition: Queue is not modified          
+
+    Postcondition: Queue is not modified        
   -----------------------------------------------------------------------*/
   
   
