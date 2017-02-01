@@ -119,11 +119,11 @@ class Queue
     of the queue
   -----------------------------------------------------------------------*/
 	
-	void merge_two_queues(Queue q2);
+	void merge_two_queues(Queue &q2);
 		/*-----------------------------------------------------------------------
     A function to merge 2 queues into one while maintaining inherent order and is 
     called using q1.merge_two_queues(q2) for example.
-    Precondition:  At least one of q1, q2 is nonempty.
+    Precondition: q1 and q2 are different queues (can appear identical)
     Postcondition: q1 contains all elements of q1 and q2 while following 
     original ordering rules.
   -----------------------------------------------------------------------*/

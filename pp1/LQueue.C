@@ -18,15 +18,13 @@ Queue::Queue()
 Queue::Queue(const Queue & original)
 {
    myFront = myBack = 0;
-   if (!original.empty())
-   {
+   if (!original.empty()) {
       // Copy first node
       myFront = myBack = new Queue::Node(original.front());
 
       // Set pointer to run through original's linked list
       Queue::NodePointer origPtr = original.myFront->next;
-      while (origPtr != 0)
-      {
+      while (origPtr != 0) {
          myBack->next = new Queue::Node(origPtr->data);
          myBack = myBack->next;
          origPtr = origPtr->next;
@@ -40,8 +38,7 @@ Queue::~Queue()
   // Set pointer to run through the queue
   Queue::NodePointer prev = myFront,
                      ptr;
-  while (prev != 0)
-    {
+  while (prev != 0) {
       ptr = prev->next;
       delete prev;
       prev = ptr;
@@ -56,8 +53,7 @@ const Queue & Queue::operator=(const Queue & rightHandSide)
       this->~Queue();                  // destroy current linked list
       if (rightHandSide.empty())       // empty queue
          myFront = myBack = 0;
-      else
-      {                                // copy rightHandSide's list
+      else {                                // copy rightHandSide's list
          // Copy first node
          myFront = myBack = new Queue::Node(rightHandSide.front());
 
@@ -86,8 +82,7 @@ void Queue::enqueue(const QueueElement & value)
    Queue::NodePointer newptr = new Queue::Node(value);
    if (empty())
       myFront = myBack = newptr;
-   else
-   {
+   else {
       myBack->next = newptr;
       myBack = newptr;
    }
@@ -107,8 +102,7 @@ QueueElement Queue::front() const
 {
    if (!empty())
       return (myFront->data);
-   else
-   {
+   else {
 	return 0;
    }
 }
@@ -123,13 +117,13 @@ void Queue::dequeue()
       delete ptr;
       if (myFront == 0)     // queue is now empty
          myBack = 0;
-   }   
-   else
+   } else
       cerr << "*** Queue is empty -- can't remove a value ***\n";
 }
 
 //--- Definition of move_to_front()
-void Queue::move_to_front(QueueElement key) {
+void Queue::move_to_front(QueueElement key) 
+{
 	if (!empty())
 	{
 		Node* temp_prev = myFront;
@@ -154,30 +148,33 @@ void Queue::move_to_front(QueueElement key) {
 		  return;
 		}
 			
-	}   
-	else
+	} else
 		cerr << "*** Queue is empty -- can't remove a value ***\n";
 }
 
 //--- Definition of merge_two_queues()
-void Queue::merge_two_queues(Queue q2) {
+void Queue::merge_two_queues(Queue &q2) 
+{
   if (!q2.empty()) {
+  	Node fakeFront(0,NULL);
   	Node * ptrTemp = myFront;
-  	myBack = myFront;
+  	myBack = &fakeFront;
 
   	while ( ptrTemp != NULL || q2.myFront != NULL) {
   		if ( ptrTemp == NULL) {
   			myBack->next = q2.myFront;
   			myBack = myBack->next;
+  			q2.myFront = q2.myFront->next;
   			continue;
   		}
   		if ( q2.myFront == NULL) {
   			myBack->next = ptrTemp;
   			myBack = myBack->next;
+  			ptrTemp = ptrTemp->next;
   			continue;
   		}
   		
-  		// do comparison and attach
+  		// Compare values and attach
   		if (q2.myFront->data > ptrTemp->data) {
   			myBack->next = ptrTemp;
   			myBack = myBack->next;
@@ -188,9 +185,10 @@ void Queue::merge_two_queues(Queue q2) {
   			q2.myFront = q2.myFront->next;
   		}
   	}
+  	
   	q2.myFront = NULL;
   	q2.myBack = NULL;
-  }
-  else
+  	myFront = fakeFront.next;
+  } else
   	return;
 }
