@@ -11,18 +11,19 @@ using namespace std;
 
 //--- Definition of Queue constructor
 Queue::Queue()
-: myFront(0), myBack(0)
+: myFront(0), myBack(0), size(0)
 {}
 
 //--- Definition of Queue copy constructor
 Queue::Queue(const Queue & original)
 {
    myFront = myBack = 0;
+   size = 0;
    if (!original.empty())
    {
       // Copy first node
       myFront = myBack = new Queue::Node(original.front());
-
+	  size = original.size;
       // Set pointer to run through original's linked list
       Queue::NodePointer origPtr = original.myFront->next;
       while (origPtr != 0)
@@ -60,7 +61,7 @@ const Queue & Queue::operator=(const Queue & rightHandSide)
       {                                // copy rightHandSide's list
          // Copy first node
          myFront = myBack = new Queue::Node(rightHandSide.front());
-
+		 size = rightHandSide.size;
          // Set pointer to run through rightHandSide's linked list
          Queue::NodePointer rhsPtr = rightHandSide.myFront->next;
          while (rhsPtr != 0)
@@ -72,6 +73,10 @@ const Queue & Queue::operator=(const Queue & rightHandSide)
       }
    }
    return *this;
+}
+
+unsigned int Queue::getSize() const {
+	return size;
 }
 
 //--- Definition of empty()
@@ -91,6 +96,7 @@ void Queue::enqueue(const QueueElement & value)
       myBack->next = newptr;
       myBack = newptr;
    }
+   size++;
 }
 
 //--- Definition of display()
@@ -123,74 +129,9 @@ void Queue::dequeue()
       delete ptr;
       if (myFront == 0)     // queue is now empty
          myBack = 0;
+	  size--;
    }   
    else
       cerr << "*** Queue is empty -- can't remove a value ***\n";
-}
-
-//--- Definition of move_to_front()
-void Queue::move_to_front(QueueElement key) {
-	if (!empty())
-	{
-		Node* temp_prev = myFront;
-		Node* temp = myFront;
-		if (temp->data == key) {
-			return;
-		}
-		while (temp->next != NULL) {
-			if (temp->data == key) {
-				temp_prev->next = temp->next;
-				temp->next = myFront;
-				myFront = temp;
-				return;
-			}
-			temp_prev = temp;
-			temp = temp->next;
-		}
-		if (temp->data == key) {
-			temp_prev->next = NULL;
-			temp->next = myFront;
-			myFront = temp;		
-		  return;
-		}
-			
-	}   
-	else
-		cerr << "*** Queue is empty -- can't remove a value ***\n";
-}
-
-//--- Definition of merge_two_queues()
-void Queue::merge_two_queues(Queue q2) {
-  if (!q2.empty()) {
-  	Node * ptrTemp = myFront;
-  	myBack = myFront;
-
-  	while ( ptrTemp != NULL || q2.myFront != NULL) {
-  		if ( ptrTemp == NULL) {
-  			myBack->next = q2.myFront;
-  			myBack = myBack->next;
-  			continue;
-  		}
-  		if ( q2.myFront == NULL) {
-  			myBack->next = ptrTemp;
-  			myBack = myBack->next;
-  			continue;
-  		}
-  		
-  		// do comparison and attach
-  		if (q2.myFront->data > ptrTemp->data) {
-  			myBack->next = ptrTemp;
-  			myBack = myBack->next;
-  			ptrTemp = ptrTemp->next;
-  		} else {
-  			myBack->next = q2.myFront;
-  			myBack = myBack->next;
-  			q2.myFront = q2.myFront->next;
-  		}
-  	}
-  	q2.myFront = NULL;
-  	q2.myBack = NULL;
-  }
-  else
-  	return;
+	
 }
