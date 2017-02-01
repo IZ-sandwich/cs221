@@ -18,7 +18,7 @@ int main(void)
 
 	cout << "How many elements to add to the queue? ";
 	int numItems = 10;
-	//cout << "Add " <<  numItems << " items";
+	cout << "Add " <<  numItems << " items";
 	//cin >> numItems;
 	for (int i = 1; i <= numItems; i++) 
 		q1.enqueue(100*i);
@@ -136,4 +136,5 @@ int main(void)
 	
 	
 	return 0;
+
 }

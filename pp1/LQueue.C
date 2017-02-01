@@ -11,17 +11,19 @@ using namespace std;
 
 //--- Definition of Queue constructor
 Queue::Queue()
-: myFront(0), myBack(0)
+: myFront(0), myBack(0), size(0)
 {}
 
 //--- Definition of Queue copy constructor
 Queue::Queue(const Queue & original)
 {
    myFront = myBack = 0;
-   if (!original.empty()) {
+   size = 0;
+   if (!original.empty())
+   {
       // Copy first node
       myFront = myBack = new Queue::Node(original.front());
-
+	  size = original.size;
       // Set pointer to run through original's linked list
       Queue::NodePointer origPtr = original.myFront->next;
       while (origPtr != 0) {
@@ -56,7 +58,7 @@ const Queue & Queue::operator=(const Queue & rightHandSide)
       else {                                // copy rightHandSide's list
          // Copy first node
          myFront = myBack = new Queue::Node(rightHandSide.front());
-
+		 size = rightHandSide.size;
          // Set pointer to run through rightHandSide's linked list
          Queue::NodePointer rhsPtr = rightHandSide.myFront->next;
          while (rhsPtr != 0)
@@ -68,6 +70,10 @@ const Queue & Queue::operator=(const Queue & rightHandSide)
       }
    }
    return *this;
+}
+
+unsigned int Queue::getSize() const {
+	return size;
 }
 
 //--- Definition of empty()
@@ -86,6 +92,7 @@ void Queue::enqueue(const QueueElement & value)
       myBack->next = newptr;
       myBack = newptr;
    }
+   size++;
 }
 
 //--- Definition of display()
@@ -117,6 +124,7 @@ void Queue::dequeue()
       delete ptr;
       if (myFront == 0)     // queue is now empty
          myBack = 0;
+			size--;
    } else
       cerr << "*** Queue is empty -- can't remove a value ***\n";
 }
@@ -191,4 +199,5 @@ void Queue::merge_two_queues(Queue &q2)
   	myFront = fakeFront.next;
   } else
   	return;
-}
+}   
+
