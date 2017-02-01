@@ -5,15 +5,15 @@
 
 using namespace std;
 
+void print(Queue q)
+{ q.display(cout); }
+
 int main() {
 	
 	planeNum = 1000;
 	
 	// Initialize input parameters
-	int landTime;
-	int takeOffTime;
-	int landRate;
-	int takeOffRate;
+	
 	int sim_length;
 	int random_seed;
 	
@@ -25,29 +25,29 @@ int main() {
 	cout << "Got value: " << landTime << endl;
 	cout << "Time for a plane to takeOff (in minutes): " ;
 	cin >> takeOffTime;
-	cout << "Landing rate (planes/hour): " ;
+	cout << "landing rate (planes/hour): " ;
 	cin >> landRate;
-	cout << "TakeOff rate (planes/hour): " ;
+	cout << "takeOff rate (planes/hour): " ;
 	cin >> takeOffRate;
 	cout << "How long to run the simulation (in minutes): ";
 	cin >> sim_length; 
+	cout << "failureRate of the runways (in tenth of percent): ";
+	cin >> failureRate; 
 	cout << "Random seed value: ";
 	cin >> random_seed;
 	
 	srand(random_seed);
 	
 	Runway r1("RUNWAY1", NULL);
-	
-	r1.landTime = landTime;
-	r1.takeOffTime = takeOffTime;
-	r1.landRate = landRate;
-	r1.takeOffRate = takeOffRate;
+	Runway r2("RUNWAAAAAAY2", &r1);
+	r1.backupRunway = &r2;
 	
 	// Sim
 	cout << "---Starting Simuration---" << endl;
 	for (int i = 0; i < sim_length; i++) {
 			cout << "Time is: " << i << endl;
 			r1.simStep();
+			r2.simStep();
 	}
 }
 	
@@ -65,44 +65,81 @@ Runway::~Runway()
 
 void Runway::simStep() {
 	cout << "*" << name << "*" << endl;
-	int landRand = rand() % 60;
-	int takeOffRand = rand() % 60;
-
-	if (landRand < landRate) {
-		// Plane is landing, generate it and add it to queue
-		cout << "    Plane # " << planeNum << " wants to land" << endl;
-		landing.enqueue(planeNum);
-		planeNum++;
-		cout << "    Plane added to landing queue; " << landing.getSize()
-			<< " in queue" << endl;
-	}
-	if (takeOffRand < takeOffRate) {
-		// Plane is taking off, generate it and add it to queue
-		cout << "    Plane # " << planeNum << " wants to take off" << endl;
-		takeoff.enqueue(planeNum);
-		planeNum++;
-		cout << "    Plane added to takeoff queue; " << takeoff.getSize()
-			<< " in queue" << endl;
-	}
+	cout << "Landing queue: ";
+	print(landing);
+	cout << "Take off queue: ";
+	print(takeoff);
 	
-	if (isFree) {
-		// Prioratize landing or allow to take off:
-		if (!landing.empty()) {
-			planeNumUsingRunway = landing.front();
-			cout << "    Plane # " << planeNumUsingRunway << " is landing" << endl;
-			landing.dequeue();
-			isFree = false;
-			timeLeft = landTime;
-			isLanding = true;
-		} else if (!takeoff.empty()) {
-			planeNumUsingRunway = takeoff.front();
-			cout << "    Plane # " << planeNumUsingRunway << " is taking off" << endl;
-			takeoff.dequeue();
-			isFree = false;
-			timeLeft = takeOffTime;
-			isLanding = false;
+	if (isActive) {
+	
+		int landRand = rand() % 60;
+		int takeOffRand = rand() % 60;
+		int failRand = rand() % 1000;
+	
+		if (failRand < failureRate && backupRunway != NULL) {
+			cout << "RUNWAY FAILURE!!!!!!!!!!!!!!!!!" << endl;
+			isActive = false;
+			backupRunway->landing.merge_two_queues(landing);
+			backupRunway->takeoff.merge_two_queues(takeoff);
+			backupRunway->backupRunway = NULL;
+			
+			if (!isFree) {
+				// Time passes:
+				timeLeft--;
+				if (timeLeft == 0) {
+					cout << "    Plane # " << planeNumUsingRunway;
+					if (isLanding)
+						cout << " has landed; " << landing.getSize() << " in landing queue"
+							<< endl;
+					else
+						cout << " has taken off; " << takeoff.getSize() << " in takeoff queue"
+							<< endl;
+					isFree = true;
+				}
+			}
+			return;
+		}
+	
+		if (landRand < landRate) {
+			// Plane is landing, generate it and add it to queue
+			cout << "    Plane # " << planeNum << " wants to land" << endl;
+			landing.enqueue(planeNum);
+			planeNum++;
+			cout << "    Plane added to landing queue; " << landing.getSize()
+				<< " in queue" << endl;
+		}
+		if (takeOffRand < takeOffRate) {
+			// Plane is taking off, generate it and add it to queue
+			cout << "    Plane # " << planeNum << " wants to take off" << endl;
+			takeoff.enqueue(planeNum);
+			planeNum++;
+			cout << "    Plane added to takeoff queue; " << takeoff.getSize()
+				<< " in queue" << endl;
+		}
+	
+		if (isFree) {
+			// Prioritize landing or allow to take off:
+			if (!landing.empty()) {
+				planeNumUsingRunway = landing.front();
+				cout << "    Plane # " << planeNumUsingRunway << " is landing" << endl;
+				landing.dequeue();
+				isFree = false;
+				timeLeft = landTime;
+				isLanding = true;
+			} else if (!takeoff.empty()) {
+				planeNumUsingRunway = takeoff.front();
+				cout << "    Plane # " << planeNumUsingRunway << " is taking off" << endl;
+				takeoff.dequeue();
+				isFree = false;
+				timeLeft = takeOffTime;
+				isLanding = false;
+			}
 		}
 	} else {
+		cout << "Runway inactive" << endl;
+	}
+	
+	if (!isFree) {
 		// Time passes:
 		timeLeft--;
 		if (timeLeft == 0) {

@@ -22,6 +22,11 @@ using namespace std;
 
 #define RUNWAY
 int planeNum;
+int landTime;
+int takeOffTime;
+int landRate;
+int takeOffRate;
+int failureRate;
 
 class Runway
 {
@@ -38,11 +43,6 @@ class Runway
 	// is a landing plane, False if it is taking off. This value is only relevant
 	// if the runway is not free
 		int planeNumUsingRunway;
-		
-		int landTime;
-		int takeOffTime;
-		int landRate;
-		int takeOffRate;
 		
 		// if runway fails, merge queues with backupRunway
 		Runway* backupRunway;

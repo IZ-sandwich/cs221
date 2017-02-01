@@ -196,6 +196,8 @@ void Queue::merge_two_queues(Queue &q2)
   	
   	q2.myFront = NULL;
   	q2.myBack = NULL;
+  	size += q2.size;
+  	q2.size = 0;
   	myFront = fakeFront.next;
   } else
   	return;
