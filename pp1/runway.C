@@ -1,7 +1,9 @@
 #include <iostream>
+
 #include "LQueue.h"
 #include "runway.h"
 
+//TODO: clean code, make comments
 
 using namespace std;
 
@@ -22,7 +24,6 @@ int main() {
 	cout << "Enter: " << endl;
 	cout << "Time for a plane to land (in minutes): " ;
 	cin >> landTime;
-	cout << "Got value: " << landTime << endl;
 	cout << "Time for a plane to takeOff (in minutes): " ;
 	cin >> takeOffTime;
 	cout << "landing rate (planes/hour): " ;
@@ -31,8 +32,9 @@ int main() {
 	cin >> takeOffRate;
 	cout << "How long to run the simulation (in minutes): ";
 	cin >> sim_length; 
-	cout << "failureRate of the runways (in tenth of percent): ";
-	cin >> failureRate; 
+	cout << "failure chance of the runways (int value, in tenths of percent): ";
+	cin >> failureRate;
+	cout << "Got value: " << failureRate << endl;
 	cout << "Random seed value: ";
 	cin >> random_seed;
 	
@@ -42,19 +44,47 @@ int main() {
 	Runway r2("RUNWAAAAAAY2", &r1);
 	r1.backupRunway = &r2;
 	
+	int simTime;
+	
 	// Sim
 	cout << "---Starting Simuration---" << endl;
-	for (int i = 0; i < sim_length; i++) {
-			cout << "Time is: " << i << endl;
+	for (simTime = 0; simTime < sim_length; simTime++) {
+			cout << "Time is: " << simTime << endl;
 			r1.simStep();
 			r2.simStep();
 	}
+	
+	r1.generatesPlanes = false;
+	r2.generatesPlanes = false;
+	cout << "Plane generation stopped" << endl;
+	
+	// Wait for queues to empty
+	while ( !r1.landing.empty() || !r1.takeoff.empty() || !r2.landing.empty() ||
+		!r2.takeoff.empty() || !r1.isFree || !r2.isFree ) {
+		
+		cout << "Time is: " << simTime << endl;
+		r1.simStep();
+		r2.simStep();
+		simTime++;
+	}
+	
+	cout << "***Statistics***" << endl;
+	r1.printStats();
+	r2.printStats();
+	
 }
 	
 Runway::Runway(string name, Runway* backupRunway) :
 	name(name),
 	isActive(true),
 	isFree(true),
+	generatesPlanes(true),
+	maxLanding(0),
+	maxTakeoff(0),
+	landWaitTime(0),
+	takeoffWaitTime(0),
+	planesLanded(0),
+	planesTakenoff(0),
 	backupRunway(backupRunway)
 {
 }
@@ -75,7 +105,7 @@ void Runway::simStep() {
 		int landRand = rand() % 60;
 		int takeOffRand = rand() % 60;
 		int failRand = rand() % 1000;
-	
+		
 		if (failRand < failureRate && backupRunway != NULL) {
 			cout << "RUNWAY FAILURE!!!!!!!!!!!!!!!!!" << endl;
 			isActive = false;
@@ -83,40 +113,49 @@ void Runway::simStep() {
 			backupRunway->takeoff.merge_two_queues(takeoff);
 			backupRunway->backupRunway = NULL;
 			
+			// Let time take one more step after deactivation
 			if (!isFree) {
 				// Time passes:
 				timeLeft--;
 				if (timeLeft == 0) {
 					cout << "    Plane # " << planeNumUsingRunway;
-					if (isLanding)
+					if (isLanding) {
 						cout << " has landed; " << landing.getSize() << " in landing queue"
 							<< endl;
-					else
+						planesLanded++;
+					} else {
 						cout << " has taken off; " << takeoff.getSize() << " in takeoff queue"
 							<< endl;
+						planesTakenoff++;
+					}
 					isFree = true;
 				}
 			}
 			return;
 		}
-	
-		if (landRand < landRate) {
-			// Plane is landing, generate it and add it to queue
-			cout << "    Plane # " << planeNum << " wants to land" << endl;
-			landing.enqueue(planeNum);
-			planeNum++;
-			cout << "    Plane added to landing queue; " << landing.getSize()
-				<< " in queue" << endl;
+		
+		if (generatesPlanes) {
+			if (landRand < landRate) {
+				// Plane is landing, generate it and add it to queue
+				cout << "    Plane # " << planeNum << " wants to land" << endl;
+				landing.enqueue(planeNum);
+				planeNum++;
+				maxLanding = max(landing.getSize(), maxLanding);
+				cout << "    Plane added to landing queue; " << landing.getSize()
+					<< " in queue" << endl;
+			}
+			if (takeOffRand < takeOffRate) {
+				// Plane is taking off, generate it and add it to queue
+				cout << "    Plane # " << planeNum << " wants to take off" << endl;
+				takeoff.enqueue(planeNum);
+				planeNum++;
+				maxTakeoff = max(takeoff.getSize(), maxTakeoff);
+				cout << "    Plane added to takeoff queue; " << takeoff.getSize()
+					<< " in queue" << endl;
+			}
 		}
-		if (takeOffRand < takeOffRate) {
-			// Plane is taking off, generate it and add it to queue
-			cout << "    Plane # " << planeNum << " wants to take off" << endl;
-			takeoff.enqueue(planeNum);
-			planeNum++;
-			cout << "    Plane added to takeoff queue; " << takeoff.getSize()
-				<< " in queue" << endl;
-		}
-	
+		
+		// Process queues
 		if (isFree) {
 			// Prioritize landing or allow to take off:
 			if (!landing.empty()) {
@@ -144,13 +183,43 @@ void Runway::simStep() {
 		timeLeft--;
 		if (timeLeft == 0) {
 			cout << "    Plane # " << planeNumUsingRunway;
-			if (isLanding)
+			if (isLanding) {
 				cout << " has landed; " << landing.getSize() << " in landing queue"
 					<< endl;
-			else
+				planesLanded++;
+			} else {
 				cout << " has taken off; " << takeoff.getSize() << " in takeoff queue"
 					<< endl;
+				planesTakenoff++;
+			}
 			isFree = true;
 		}
 	}
+	
+	landWaitTime += landing.getSize();
+	takeoffWaitTime += takeoff.getSize();
+}
+
+void Runway::printStats() {
+	double averageLandingWait = ((double) landWaitTime) / planesLanded;
+	double averageTakeoffWait = ((double) takeoffWaitTime) / planesTakenoff;
+	
+	cout << name << " landed:   " << planesLanded << " planes" << endl;
+	cout << name << " sent off: " << planesTakenoff << " planes" << endl;
+	cout << name << " has average landing wait time of " << averageLandingWait
+		<< " minutes" << endl;
+	cout << name << " has average takeoff wait time of " << averageTakeoffWait
+		<< " minutes" << endl;
+	cout << name << " had a maximum landing queue of " << maxLanding << " planes"
+		<< endl;
+	cout << name << " had a maximum takeoff queue of " << maxTakeoff << " planes"
+		<< endl;
+}
+
+
+unsigned int max(unsigned int a, unsigned int b) {
+	if (a > b)
+		return a;
+	else
+		return b;
 }
