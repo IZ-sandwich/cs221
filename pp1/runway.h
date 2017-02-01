@@ -1,18 +1,15 @@
 
 /*-- runway.h -------------------------------------------------------------
 
-  This header file defines a runway
+  This header file defines a Runway
   
-  TODO: edit this:
   Basic operations:
-    constructor:  Constructs an empty queue
-    empty:        Checks if a queue is empty
-    enqueue:      Modifies a queue by adding a value at the back
-    front:        Accesses the top queue value; leaves queue unchanged
-    dequeue:      Modifies queue by removing the value at the front
-    display:      Displays all the queue elements
-    Note: Execution terminates if memory isn't available for a queue element.
----------------------------------------------------------------------------*/
+    constructor:  Constructs a Runway with default settings (active, unoccupied,
+				    empty queues, allows landing/take-off requests)
+	simStep:      Updates a runway's fields
+    printStats:   Print runway statistics (planes landed/taken off, average wait
+					time, etc.)
+    ---------------------------------------------------------------------------*/
 
 #include <iostream>
 #include <string>
@@ -47,6 +44,9 @@ class Runway
 		int planeNumUsingRunway;
 		bool generatesPlanes;
 		
+		// a backup runway for planes in queue to land if runway fails
+		Runway* backupRunway;
+		
 		// Statistics values
 		unsigned int maxLanding;
 		unsigned int maxTakeoff;
@@ -55,8 +55,7 @@ class Runway
 		int planesLanded;
 		int planesTakenoff;
 		
-		// if runway fails, merge queues with backupRunway
-		Runway* backupRunway;
+
 		
 		// Runs a single step of the simulation
 		void simStep();
