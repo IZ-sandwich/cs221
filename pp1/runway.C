@@ -32,7 +32,6 @@ int main() {
 	cin >> sim_length; 
 	cout << "failure chance of the runways (int value, in tenths of percent): ";
 	cin >> failureRate;
-	cout << "Got value: " << failureRate << endl;
 	cout << "Random seed value: ";
 	cin >> random_seed;
 	
@@ -100,9 +99,9 @@ Runway::~Runway()
 
 void Runway::simStep() {
 	cout << "*" << name << "*" << endl;
-	cout << "Landing queue: ";
+	cout << "    Landing queue: ";
 	print(landing);
-	cout << "Take off queue: ";
+	cout << "    Take off queue: ";
 	print(takeoff);
 	
 	if (isActive) {
@@ -149,16 +148,16 @@ void Runway::simStep() {
 				landing.enqueue(planeNum);
 				planeNum++;
 				maxLanding = max(landing.getSize(), maxLanding);
-				cout << "    Plane added to landing queue; " << landing.getSize()
+				cout << "        Plane added to landing queue; " << landing.getSize()
 					<< " in queue" << endl;
 			}
 			if (takeOffRand < takeOffRate) {
 				// Plane is taking off, generate it and add it to queue
-				cout << "    Plane # " << planeNum << " wants to take off" << endl;
+				cout << "        Plane # " << planeNum << " wants to take off" << endl;
 				takeoff.enqueue(planeNum);
 				planeNum++;
 				maxTakeoff = max(takeoff.getSize(), maxTakeoff);
-				cout << "    Plane added to takeoff queue; " << takeoff.getSize()
+				cout << "        Plane added to takeoff queue; " << takeoff.getSize()
 					<< " in queue" << endl;
 			}
 		}
@@ -168,14 +167,14 @@ void Runway::simStep() {
 			// Prioritize landing or allow to take off:
 			if (!landing.empty()) {
 				planeNumUsingRunway = landing.front();
-				cout << "    Plane # " << planeNumUsingRunway << " is landing" << endl;
+				cout << "        Plane # " << planeNumUsingRunway << " is landing" << endl;
 				landing.dequeue();
 				isFree = false;
 				timeLeft = landTime;
 				isLanding = true;
 			} else if (!takeoff.empty()) {
 				planeNumUsingRunway = takeoff.front();
-				cout << "    Plane # " << planeNumUsingRunway << " is taking off" << endl;
+				cout << "        Plane # " << planeNumUsingRunway << " is taking off" << endl;
 				takeoff.dequeue();
 				isFree = false;
 				timeLeft = takeOffTime;
@@ -191,7 +190,7 @@ void Runway::simStep() {
 		// Time passes:
 		timeLeft--;
 		if (timeLeft == 0) {
-			cout << "    Plane # " << planeNumUsingRunway;
+			cout << "        Plane # " << planeNumUsingRunway;
 			if (isLanding) {
 				cout << " has landed; " << landing.getSize() << " in landing queue"
 					<< endl;
