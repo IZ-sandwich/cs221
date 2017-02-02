@@ -45,9 +45,6 @@ class Runway
 		int planeNumUsingRunway;
 		bool generatesPlanes;
 		
-		// A backup runway for planes in queue to land if runway fails
-		Runway* backupRunway;
-		
 		// Statistics values
 		unsigned int maxLanding;
 		unsigned int maxTakeoff;
@@ -56,6 +53,8 @@ class Runway
 		int planesLanded;
 		int planesTakenoff;
 		
+		// A backup runway for planes in queue to land if runway fails
+		Runway* backupRunway;
 
 		
 		// Runs a single step of the simulation
