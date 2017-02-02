@@ -1,9 +1,6 @@
 #include <iostream>
-
 #include "LQueue.h"
 #include "runway.h"
-
-//TODO: clean code, make comments
 
 using namespace std;
 
@@ -50,7 +47,7 @@ int main() {
 	int simTime;
 	
 	
-	cout << "---Starting Simuration---" << endl;
+	cout << "---Starting Simulation---" << endl;
 	for (simTime = 0; simTime < sim_length; simTime++) {
 			cout << "Time is: " << simTime << endl;
 			// Update each runway for current time step
