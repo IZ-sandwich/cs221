@@ -1,0 +1,68 @@
+Script started on Thu 02 Feb 2017 12:05:59 AM STD
+]0;root@DESKTOP-H9OV68I: /mnt/c/Users/ME/Documents/GitHub/cs221/pp1root@DESKTOP-H9OV68I:/mnt/c/Users/ME/Documents/GitHub/cs221/pp1# ./LQueue_drivver
+Queue created.  Empty? true
+How many elements to add to the queue? 9
+Contents of queue q1 (via  print):
+100  200  300  400  500  600  700  800  900  
+
+Contents of queue q2 after q2 = q1 (via  print):
+100  200  300  400  500  600  700  800  900  
+
+Queue q2 empty? false
+Front value in q2: 100
+Remove front -- Queue contents: 200  300  400  500  600  700  800  900  
+Remove front -- Queue contents: 300  400  500  600  700  800  900  
+Remove front -- Queue contents: 400  500  600  700  800  900  
+Remove front -- Queue contents: 500  600  700  800  900  
+Remove front -- Queue contents: 600  700  800  900  
+Remove front -- Queue contents: 700  800  900  
+Remove front -- Queue contents: 800  900  
+Remove front -- Queue contents: 900  
+Remove front -- Queue contents: 
+Queue q2 empty? true
+Front value in q2?
+0
+Trying to remove front of q2: 
+*** Queue is empty -- can't remove a value ***
+Q3 is:
+100  200  300  400  500  
+Moving 100 to front
+Moved 100 to front
+100  200  300  400  500  
+Moving 300 to front
+Moved 300 to front
+300  100  200  400  500  
+Moving 500 to front
+Moved 500 to front
+500  300  100  200  400  
+Q4 is:
+100  200  300  400  500  
+Q5 is:
+90  180  270  
+Merging q5 into q4
+Merge complete
+q5 is now empty: 
+Merged result in q4: 90  100  180  200  270  300  400  500  
+Merging q5 into q4 again
+Merge complete
+q5 is still empty: 
+Merged result: 90  100  180  200  270  300  400  500  
+Merging q4 into q5
+Merge complete
+q4 is now empty: 
+Merged result: 90  100  180  200  270  300  400  500  
+Merging 2 empty queues
+Merge complete
+Merged result is an empty queue: 
+Q6 is
+0  1  
+Q7 is
+0  1  
+Merging queues with identical members
+Merge complete
+One queue is now empty: 
+Merged result: 0  0  1  1  
+]0;root@DESKTOP-H9OV68I: /mnt/c/Users/ME/Documents/GitHub/cs221/pp1root@DESKTOP-H9OV68I:/mnt/c/Users/ME/Documents/GitHub/cs221/pp1# exit
+exit
+
+Script done on Thu 02 Feb 2017 12:06:17 AM STD

@@ -17,9 +17,8 @@ int main(void)
 	cout << "Queue created.  Empty? " << boolalpha << q1.empty() << endl;
 
 	cout << "How many elements to add to the queue? ";
-	int numItems = 10;
-	cout << "Add " <<  numItems << " items";
-	//cin >> numItems;
+	int numItems;
+	cin >> numItems;
 	for (int i = 1; i <= numItems; i++) 
 		q1.enqueue(100*i);
 

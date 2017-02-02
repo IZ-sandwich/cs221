@@ -1,0 +1,3862 @@
+Script started on Wed 01 Feb 2017 11:15:35 PM STD
+]0;root@DESKTOP-H9OV68I: /mnt/c/Users/ME/Documents/GitHub/cs221/pp1root@DESKTOP-H9OV68I:/mnt/c/Users/ME/Documents/GitHub/cs221/pp1# ./runway
+Runway
+Enter: 
+Time for a plane to land (in minutes): 10
+Time for a plane to takeOff (in minutes): 12
+landing rate (planes/hour): 15
+takeOff rate (planes/hour): 11
+How long to run the simulation (in minutes): 100
+failure chance of the runways (int value, in tenths of percent): 3
+Random seed value: 586
+---Starting Simulation---
+----- Time is: 0 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 1 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1000 wants to land
+    Plane added to landing queue; 1 in queue
+    Plane # 1000 is landing
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 2 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1001 wants to take off
+    Plane added to takeoff queue; 1 in queue
+    Plane # 1001 is taking off
+----- Time is: 3 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 4 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 5 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1002 wants to take off
+    Plane added to takeoff queue; 1 in queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1003 wants to land
+    Plane added to landing queue; 1 in queue
+----- Time is: 6 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  
+    Plane # 1004 wants to land
+    Plane added to landing queue; 1 in queue
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 
+----- Time is: 7 -----
+*RUNWAY 1*
+    Landing queue: 1004  
+    Take off queue: 1002  
+    Plane # 1005 wants to land
+    Plane added to landing queue; 2 in queue
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 
+----- Time is: 8 -----
+*RUNWAY 1*
+    Landing queue: 1004  1005  
+    Take off queue: 1002  
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 
+----- Time is: 9 -----
+*RUNWAY 1*
+    Landing queue: 1004  1005  
+    Take off queue: 1002  
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 
+    Plane # 1006 wants to take off
+    Plane added to takeoff queue; 1 in queue
+----- Time is: 10 -----
+*RUNWAY 1*
+    Landing queue: 1004  1005  
+    Take off queue: 1002  
+    Plane # 1000 has landed; 2 in landing queue
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 1006  
+----- Time is: 11 -----
+*RUNWAY 1*
+    Landing queue: 1004  1005  
+    Take off queue: 1002  
+    Plane # 1004 is landing
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 1006  
+    Plane # 1007 wants to take off
+    Plane added to takeoff queue; 2 in queue
+----- Time is: 12 -----
+*RUNWAY 1*
+    Landing queue: 1005  
+    Take off queue: 1002  
+    Plane # 1008 wants to take off
+    Plane added to takeoff queue; 2 in queue
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 1006  1007  
+    Plane # 1009 wants to take off
+    Plane added to takeoff queue; 3 in queue
+----- Time is: 13 -----
+*RUNWAY 1*
+    Landing queue: 1005  
+    Take off queue: 1002  1008  
+*RUNWAY 2*
+    Landing queue: 1003  
+    Take off queue: 1006  1007  1009  
+    Plane # 1010 wants to land
+    Plane added to landing queue; 2 in queue
+    Plane # 1011 wants to take off
+    Plane added to takeoff queue; 4 in queue
+    Plane # 1001 has taken off; 4 in takeoff queue
+----- Time is: 14 -----
+*RUNWAY 1*
+    Landing queue: 1005  
+    Take off queue: 1002  1008  
+    Plane # 1012 wants to land
+    Plane added to landing queue; 2 in queue
+*RUNWAY 2*
+    Landing queue: 1003  1010  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1013 wants to land
+    Plane added to landing queue; 3 in queue
+    Plane # 1003 is landing
+----- Time is: 15 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  
+*RUNWAY 2*
+    Landing queue: 1010  1013  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1014 wants to land
+    Plane added to landing queue; 3 in queue
+----- Time is: 16 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  
+    Plane # 1015 wants to take off
+    Plane added to takeoff queue; 3 in queue
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 17 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 18 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 19 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 20 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  
+    Take off queue: 1002  1008  1015  
+    Plane # 1016 wants to land
+    Plane added to landing queue; 3 in queue
+    Plane # 1004 has landed; 3 in landing queue
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1017 wants to land
+    Plane added to landing queue; 4 in queue
+----- Time is: 21 -----
+*RUNWAY 1*
+    Landing queue: 1005  1012  1016  
+    Take off queue: 1002  1008  1015  
+    Plane # 1005 is landing
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  1017  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 22 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  1017  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1018 wants to land
+    Plane added to landing queue; 5 in queue
+----- Time is: 23 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  1017  1018  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1003 has landed; 5 in landing queue
+----- Time is: 24 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1010  1013  1014  1017  1018  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1019 wants to land
+    Plane added to landing queue; 6 in queue
+    Plane # 1010 is landing
+----- Time is: 25 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 26 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  
+    Plane # 1020 wants to take off
+    Plane added to takeoff queue; 4 in queue
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 27 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  1020  
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  
+----- Time is: 28 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  1020  
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  
+    Plane # 1021 wants to take off
+    Plane added to takeoff queue; 5 in queue
+----- Time is: 29 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  1020  
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  1021  
+----- Time is: 30 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  1020  
+    Plane # 1005 has landed; 2 in landing queue
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  1021  
+----- Time is: 31 -----
+*RUNWAY 1*
+    Landing queue: 1012  1016  
+    Take off queue: 1002  1008  1015  1020  
+    Plane # 1022 wants to take off
+    Plane added to takeoff queue; 5 in queue
+    Plane # 1012 is landing
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  1021  
+----- Time is: 32 -----
+*RUNWAY 1*
+    Landing queue: 1016  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1023 wants to land
+    Plane added to landing queue; 2 in queue
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  
+    Take off queue: 1006  1007  1009  1011  1021  
+    Plane # 1024 wants to land
+    Plane added to landing queue; 6 in queue
+----- Time is: 33 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  1024  
+    Take off queue: 1006  1007  1009  1011  1021  
+    Plane # 1010 has landed; 6 in landing queue
+----- Time is: 34 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1025 wants to land
+    Plane added to landing queue; 3 in queue
+*RUNWAY 2*
+    Landing queue: 1013  1014  1017  1018  1019  1024  
+    Take off queue: 1006  1007  1009  1011  1021  
+    Plane # 1026 wants to land
+    Plane added to landing queue; 7 in queue
+    Plane # 1013 is landing
+----- Time is: 35 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  
+    Plane # 1027 wants to take off
+    Plane added to takeoff queue; 6 in queue
+----- Time is: 36 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 37 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 38 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 39 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1028 wants to land
+    Plane added to landing queue; 4 in queue
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 40 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1012 has landed; 4 in landing queue
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 41 -----
+*RUNWAY 1*
+    Landing queue: 1016  1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1016 is landing
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 42 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+----- Time is: 43 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  
+    Plane # 1029 wants to take off
+    Plane added to takeoff queue; 6 in queue
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+    Plane # 1013 has landed; 6 in landing queue
+----- Time is: 44 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+*RUNWAY 2*
+    Landing queue: 1014  1017  1018  1019  1024  1026  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+    Plane # 1030 wants to land
+    Plane added to landing queue; 7 in queue
+    Plane # 1014 is landing
+----- Time is: 45 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  
+    Take off queue: 1006  1007  1009  1011  1021  1027  
+    Plane # 1031 wants to take off
+    Plane added to takeoff queue; 7 in queue
+----- Time is: 46 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+    Plane # 1032 wants to land
+    Plane added to landing queue; 4 in queue
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  
+----- Time is: 47 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  
+    Plane # 1033 wants to land
+    Plane added to landing queue; 7 in queue
+    Plane # 1034 wants to take off
+    Plane added to takeoff queue; 8 in queue
+----- Time is: 48 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  
+    Plane # 1035 wants to take off
+    Plane added to takeoff queue; 9 in queue
+----- Time is: 49 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  
+----- Time is: 50 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+    Plane # 1016 has landed; 4 in landing queue
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  
+    Plane # 1036 wants to take off
+    Plane added to takeoff queue; 10 in queue
+----- Time is: 51 -----
+*RUNWAY 1*
+    Landing queue: 1023  1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+    Plane # 1023 is landing
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  
+----- Time is: 52 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  
+    Take off queue: 1002  1008  1015  1020  1022  1029  
+    Plane # 1037 wants to land
+    Plane added to landing queue; 4 in queue
+    Plane # 1038 wants to take off
+    Plane added to takeoff queue; 7 in queue
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  
+    Plane # 1039 wants to take off
+    Plane added to takeoff queue; 11 in queue
+----- Time is: 53 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  
+    Plane # 1014 has landed; 7 in landing queue
+----- Time is: 54 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1017  1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  
+    Plane # 1017 is landing
+----- Time is: 55 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  
+    Plane # 1040 wants to land
+    Plane added to landing queue; 7 in queue
+    Plane # 1041 wants to take off
+    Plane added to takeoff queue; 12 in queue
+----- Time is: 56 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  
+    Plane # 1042 wants to land
+    Plane added to landing queue; 8 in queue
+----- Time is: 57 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  
+    Plane # 1043 wants to take off
+    Plane added to takeoff queue; 13 in queue
+----- Time is: 58 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+    Plane # 1044 wants to land
+    Plane added to landing queue; 5 in queue
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  
+    Plane # 1045 wants to take off
+    Plane added to takeoff queue; 14 in queue
+----- Time is: 59 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1046 wants to land
+    Plane added to landing queue; 9 in queue
+----- Time is: 60 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+    Plane # 1023 has landed; 5 in landing queue
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  1046  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1047 wants to land
+    Plane added to landing queue; 10 in queue
+----- Time is: 61 -----
+*RUNWAY 1*
+    Landing queue: 1025  1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+    Plane # 1025 is landing
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 62 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  
+    Plane # 1048 wants to take off
+    Plane added to takeoff queue; 8 in queue
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 63 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1017 has landed; 10 in landing queue
+----- Time is: 64 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  
+*RUNWAY 2*
+    Landing queue: 1018  1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1018 is landing
+----- Time is: 65 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 66 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  
+    Plane # 1049 wants to take off
+    Plane added to takeoff queue; 9 in queue
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1050 wants to land
+    Plane added to landing queue; 10 in queue
+----- Time is: 67 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 68 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1051 wants to land
+    Plane added to landing queue; 11 in queue
+----- Time is: 69 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1052 wants to land
+    Plane added to landing queue; 12 in queue
+----- Time is: 70 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1053 wants to land
+    Plane added to landing queue; 5 in queue
+    Plane # 1025 has landed; 5 in landing queue
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 71 -----
+*RUNWAY 1*
+    Landing queue: 1028  1032  1037  1044  1053  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1028 is landing
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 72 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+----- Time is: 73 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1054 wants to land
+    Plane added to landing queue; 5 in queue
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1055 wants to land
+    Plane added to landing queue; 13 in queue
+    Plane # 1018 has landed; 13 in landing queue
+----- Time is: 74 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1019  1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1019 is landing
+----- Time is: 75 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  
+    Plane # 1056 wants to take off
+    Plane added to takeoff queue; 15 in queue
+----- Time is: 76 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  
+    Plane # 1057 wants to land
+    Plane added to landing queue; 13 in queue
+----- Time is: 77 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1058 wants to land
+    Plane added to landing queue; 6 in queue
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  
+----- Time is: 78 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  
+----- Time is: 79 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  
+    Plane # 1059 wants to take off
+    Plane added to takeoff queue; 16 in queue
+----- Time is: 80 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1028 has landed; 6 in landing queue
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+    Plane # 1060 wants to land
+    Plane added to landing queue; 14 in queue
+----- Time is: 81 -----
+*RUNWAY 1*
+    Landing queue: 1032  1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1032 is landing
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+    Plane # 1061 wants to land
+    Plane added to landing queue; 15 in queue
+----- Time is: 82 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+----- Time is: 83 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1062 wants to land
+    Plane added to landing queue; 6 in queue
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+    Plane # 1019 has landed; 15 in landing queue
+----- Time is: 84 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+*RUNWAY 2*
+    Landing queue: 1024  1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+    Plane # 1024 is landing
+----- Time is: 85 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  
+    Plane # 1063 wants to land
+    Plane added to landing queue; 7 in queue
+    Plane # 1064 wants to take off
+    Plane added to takeoff queue; 10 in queue
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  
+    Plane # 1065 wants to take off
+    Plane added to takeoff queue; 17 in queue
+----- Time is: 86 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  
+----- Time is: 87 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1066 wants to land
+    Plane added to landing queue; 8 in queue
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  
+    Plane # 1067 wants to take off
+    Plane added to takeoff queue; 18 in queue
+----- Time is: 88 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  1066  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  
+----- Time is: 89 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  1066  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1068 wants to land
+    Plane added to landing queue; 9 in queue
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  
+    Plane # 1069 wants to land
+    Plane added to landing queue; 15 in queue
+----- Time is: 90 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  1066  1068  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1070 wants to land
+    Plane added to landing queue; 10 in queue
+    Plane # 1032 has landed; 10 in landing queue
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  
+    Plane # 1071 wants to take off
+    Plane added to takeoff queue; 19 in queue
+----- Time is: 91 -----
+*RUNWAY 1*
+    Landing queue: 1037  1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1037 is landing
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+----- Time is: 92 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+----- Time is: 93 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+    Plane # 1024 has landed; 15 in landing queue
+----- Time is: 94 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1026  1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+    Plane # 1072 wants to land
+    Plane added to landing queue; 16 in queue
+    Plane # 1026 is landing
+----- Time is: 95 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+----- Time is: 96 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+    Plane # 1073 wants to land
+    Plane added to landing queue; 16 in queue
+----- Time is: 97 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+----- Time is: 98 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1074 wants to land
+    Plane added to landing queue; 10 in queue
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  
+    Plane # 1075 wants to take off
+    Plane added to takeoff queue; 20 in queue
+----- Time is: 99 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+No new take-off or landing requests beyond this time
+----- Time is: 100 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1037 has landed; 10 in landing queue
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 101 -----
+*RUNWAY 1*
+    Landing queue: 1044  1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1044 is landing
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 102 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 103 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1026 has landed; 16 in landing queue
+----- Time is: 104 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1030  1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1030 is landing
+----- Time is: 105 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 106 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 107 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 108 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 109 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 110 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1044 has landed; 9 in landing queue
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 111 -----
+*RUNWAY 1*
+    Landing queue: 1053  1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1053 is landing
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 112 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 113 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1030 has landed; 15 in landing queue
+----- Time is: 114 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1033  1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1033 is landing
+----- Time is: 115 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 116 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 117 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 118 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 119 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 120 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1053 has landed; 8 in landing queue
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 121 -----
+*RUNWAY 1*
+    Landing queue: 1054  1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1054 is landing
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 122 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 123 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1033 has landed; 14 in landing queue
+----- Time is: 124 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1040  1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1040 is landing
+----- Time is: 125 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 126 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 127 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 128 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 129 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 130 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1054 has landed; 7 in landing queue
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 131 -----
+*RUNWAY 1*
+    Landing queue: 1058  1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1058 is landing
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 132 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 133 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1040 has landed; 13 in landing queue
+----- Time is: 134 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1042  1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1042 is landing
+----- Time is: 135 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 136 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 137 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 138 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 139 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 140 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1058 has landed; 6 in landing queue
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 141 -----
+*RUNWAY 1*
+    Landing queue: 1062  1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1062 is landing
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 142 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 143 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1042 has landed; 12 in landing queue
+----- Time is: 144 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1046  1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1046 is landing
+----- Time is: 145 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 146 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 147 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 148 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 149 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 150 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1062 has landed; 5 in landing queue
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 151 -----
+*RUNWAY 1*
+    Landing queue: 1063  1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1063 is landing
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 152 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 153 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1046 has landed; 11 in landing queue
+----- Time is: 154 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1047  1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1047 is landing
+----- Time is: 155 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 156 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 157 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 158 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 159 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 160 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1063 has landed; 4 in landing queue
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 161 -----
+*RUNWAY 1*
+    Landing queue: 1066  1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1066 is landing
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 162 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 163 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1047 has landed; 10 in landing queue
+----- Time is: 164 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1050  1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1050 is landing
+----- Time is: 165 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 166 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 167 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 168 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 169 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 170 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1066 has landed; 3 in landing queue
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 171 -----
+*RUNWAY 1*
+    Landing queue: 1068  1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1068 is landing
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 172 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 173 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1050 has landed; 9 in landing queue
+----- Time is: 174 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1051  1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1051 is landing
+----- Time is: 175 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 176 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 177 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 178 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 179 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 180 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1068 has landed; 2 in landing queue
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 181 -----
+*RUNWAY 1*
+    Landing queue: 1070  1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1070 is landing
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 182 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 183 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1051 has landed; 8 in landing queue
+----- Time is: 184 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1052  1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1052 is landing
+----- Time is: 185 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 186 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 187 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 188 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 189 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 190 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1070 has landed; 1 in landing queue
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 191 -----
+*RUNWAY 1*
+    Landing queue: 1074  
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1074 is landing
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 192 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 193 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1052 has landed; 7 in landing queue
+----- Time is: 194 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1055  1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1055 is landing
+----- Time is: 195 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 196 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 197 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 198 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 199 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 200 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1074 has landed; 0 in landing queue
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 201 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1002  1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1002 is taking off
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 202 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 203 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1055 has landed; 6 in landing queue
+----- Time is: 204 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1057  1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1057 is landing
+----- Time is: 205 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 206 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 207 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 208 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 209 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 210 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 211 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 212 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1002 has taken off; 9 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 213 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1008  1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1008 is taking off
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1057 has landed; 5 in landing queue
+----- Time is: 214 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1060  1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1060 is landing
+----- Time is: 215 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 216 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 217 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 218 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 219 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 220 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 221 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 222 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 223 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1060 has landed; 4 in landing queue
+----- Time is: 224 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1008 has taken off; 8 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 1061  1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1061 is landing
+----- Time is: 225 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1015  1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1015 is taking off
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 226 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 227 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 228 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 229 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 230 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 231 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 232 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 233 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1061 has landed; 3 in landing queue
+----- Time is: 234 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1069  1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1069 is landing
+----- Time is: 235 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 236 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1015 has taken off; 7 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 237 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1020  1022  1029  1038  1048  1049  1064  
+    Plane # 1020 is taking off
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 238 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 239 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 240 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 241 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 242 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 243 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1069 has landed; 2 in landing queue
+----- Time is: 244 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1072  1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1072 is landing
+----- Time is: 245 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 246 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 247 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 248 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+    Plane # 1020 has taken off; 6 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 249 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1022  1029  1038  1048  1049  1064  
+    Plane # 1022 is taking off
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 250 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 251 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 252 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 253 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1072 has landed; 1 in landing queue
+----- Time is: 254 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 1073  
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1073 is landing
+----- Time is: 255 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 256 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 257 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 258 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 259 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 260 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+    Plane # 1022 has taken off; 5 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 261 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1029  1038  1048  1049  1064  
+    Plane # 1029 is taking off
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 262 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 263 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1073 has landed; 0 in landing queue
+----- Time is: 264 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1006  1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1006 is taking off
+----- Time is: 265 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 266 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 267 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 268 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 269 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 270 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 271 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 272 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+    Plane # 1029 has taken off; 4 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 273 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1038  1048  1049  1064  
+    Plane # 1038 is taking off
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 274 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 275 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1006 has taken off; 19 in takeoff queue
+----- Time is: 276 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1007  1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1007 is taking off
+----- Time is: 277 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 278 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 279 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 280 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 281 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 282 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 283 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 284 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+    Plane # 1038 has taken off; 3 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 285 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1048  1049  1064  
+    Plane # 1048 is taking off
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 286 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 287 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1007 has taken off; 18 in takeoff queue
+----- Time is: 288 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1009  1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1009 is taking off
+----- Time is: 289 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 290 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 291 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 292 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 293 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 294 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 295 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 296 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+    Plane # 1048 has taken off; 2 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 297 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1049  1064  
+    Plane # 1049 is taking off
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 298 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 299 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1009 has taken off; 17 in takeoff queue
+----- Time is: 300 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1011  1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1011 is taking off
+----- Time is: 301 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 302 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 303 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 304 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 305 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 306 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 307 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 308 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+    Plane # 1049 has taken off; 1 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 309 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 1064  
+    Plane # 1064 is taking off
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 310 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 311 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1011 has taken off; 16 in takeoff queue
+----- Time is: 312 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1021  1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1021 is taking off
+----- Time is: 313 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 314 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 315 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 316 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 317 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 318 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 319 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 320 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1064 has taken off; 0 in takeoff queue
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 321 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 322 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 323 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1021 has taken off; 15 in takeoff queue
+----- Time is: 324 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1027  1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1027 is taking off
+----- Time is: 325 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 326 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 327 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 328 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 329 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 330 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 331 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 332 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 333 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 334 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 335 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1027 has taken off; 14 in takeoff queue
+----- Time is: 336 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1031  1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1031 is taking off
+----- Time is: 337 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 338 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 339 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 340 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 341 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 342 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 343 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 344 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 345 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 346 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 347 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1031 has taken off; 13 in takeoff queue
+----- Time is: 348 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1034  1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1034 is taking off
+----- Time is: 349 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 350 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 351 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 352 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 353 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 354 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 355 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 356 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 357 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 358 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 359 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1034 has taken off; 12 in takeoff queue
+----- Time is: 360 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1035  1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1035 is taking off
+----- Time is: 361 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 362 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 363 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 364 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 365 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 366 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 367 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 368 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 369 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 370 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 371 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1035 has taken off; 11 in takeoff queue
+----- Time is: 372 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1036  1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1036 is taking off
+----- Time is: 373 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 374 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 375 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 376 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 377 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 378 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 379 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 380 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 381 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 382 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 383 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1036 has taken off; 10 in takeoff queue
+----- Time is: 384 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1039  1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1039 is taking off
+----- Time is: 385 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 386 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 387 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 388 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 389 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 390 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 391 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 392 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 393 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 394 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 395 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1039 has taken off; 9 in takeoff queue
+----- Time is: 396 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1041  1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1041 is taking off
+----- Time is: 397 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 398 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 399 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 400 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 401 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 402 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 403 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 404 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 405 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 406 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 407 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1041 has taken off; 8 in takeoff queue
+----- Time is: 408 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1043  1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1043 is taking off
+----- Time is: 409 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 410 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 411 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 412 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 413 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 414 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 415 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 416 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 417 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 418 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+----- Time is: 419 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1043 has taken off; 7 in takeoff queue
+----- Time is: 420 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1045  1056  1059  1065  1067  1071  1075  
+    Plane # 1045 is taking off
+----- Time is: 421 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 422 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 423 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 424 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 425 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 426 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 427 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 428 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 429 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 430 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+----- Time is: 431 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+    Plane # 1045 has taken off; 6 in takeoff queue
+----- Time is: 432 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1056  1059  1065  1067  1071  1075  
+    Plane # 1056 is taking off
+----- Time is: 433 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 434 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 435 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 436 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 437 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 438 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 439 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 440 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 441 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 442 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+----- Time is: 443 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+    Plane # 1056 has taken off; 5 in takeoff queue
+----- Time is: 444 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1059  1065  1067  1071  1075  
+    Plane # 1059 is taking off
+----- Time is: 445 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 446 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 447 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 448 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 449 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 450 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 451 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 452 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 453 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 454 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+----- Time is: 455 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+    Plane # 1059 has taken off; 4 in takeoff queue
+----- Time is: 456 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1065  1067  1071  1075  
+    Plane # 1065 is taking off
+----- Time is: 457 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 458 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 459 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 460 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 461 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 462 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 463 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 464 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 465 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 466 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+----- Time is: 467 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+    Plane # 1065 has taken off; 3 in takeoff queue
+----- Time is: 468 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1067  1071  1075  
+    Plane # 1067 is taking off
+----- Time is: 469 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 470 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 471 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 472 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 473 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 474 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 475 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 476 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 477 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 478 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+----- Time is: 479 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+    Plane # 1067 has taken off; 2 in takeoff queue
+----- Time is: 480 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1071  1075  
+    Plane # 1071 is taking off
+----- Time is: 481 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 482 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 483 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 484 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 485 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 486 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 487 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 488 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 489 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 490 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+----- Time is: 491 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+    Plane # 1071 has taken off; 1 in takeoff queue
+----- Time is: 492 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 1075  
+    Plane # 1075 is taking off
+----- Time is: 493 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 494 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 495 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 496 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 497 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 498 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 499 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 500 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 501 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 502 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+----- Time is: 503 -----
+*RUNWAY 1*
+    Landing queue: 
+    Take off queue: 
+*RUNWAY 2*
+    Landing queue: 
+    Take off queue: 
+    Plane # 1075 has taken off; 0 in takeoff queue
+***Statistics***
+RUNWAY 1 landed:   20 planes
+RUNWAY 1 sent off: 10 planes
+RUNWAY 1 has average landing wait time of 42.95 minutes
+RUNWAY 1 has average takeoff wait time of 215.2 minutes
+RUNWAY 1 had a maximum landing queue of 10 planes
+RUNWAY 1 had a maximum takeoff queue of 10 planes
+RUNWAY 2 landed:   25 planes
+RUNWAY 2 sent off: 21 planes
+RUNWAY 2 has average landing wait time of 82.32 minutes
+RUNWAY 2 has average takeoff wait time of 310.762 minutes
+RUNWAY 2 had a maximum landing queue of 16 planes
+RUNWAY 2 had a maximum takeoff queue of 20 planes
+]0;root@DESKTOP-H9OV68I: /mnt/c/Users/ME/Documents/GitHub/cs221/pp1root@DESKTOP-H9OV68I:/mnt/c/Users/ME/Documents/GitHub/cs221/pp1# exit
+exit
+
+Script done on Wed 01 Feb 2017 11:15:54 PM STD
