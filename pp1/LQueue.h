@@ -113,6 +113,7 @@ class Queue
 	/*-----------------------------------------------------------------------
     A function to search through a queue for a particular key value, and if 
     found, move the node to the front of the same queue
+	
     Precondition:  Queue is nonempty.
     Postcondition: Element with the matching key has been moved to the front
     of the queue
@@ -122,6 +123,7 @@ class Queue
 		/*-----------------------------------------------------------------------
     A function to merge 2 queues into one while maintaining inherent order and is 
     called using q1.merge_two_queues(q2) for example.
+	
     Precondition: q1 and q2 are different queues (can appear identical)
     Postcondition: q1 contains all elements of q1 and q2 while following 
     original ordering rules.
@@ -132,6 +134,7 @@ class Queue
   /*-----------------------------------------------------------------------
     Returns the size of the queue;
 
+	Precondition: None
     Postcondition: Queue is not modified        
   -----------------------------------------------------------------------*/
   
