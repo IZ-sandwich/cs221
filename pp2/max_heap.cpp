@@ -50,8 +50,18 @@ text_item max_heap::delete_max() {
 
 void max_heap::swap_down(int i) {
 	// ADD CODE HERE
-	if (data[i] <= data[2*i]) swap(data[i],data[2*i]; //swap with left child
-	else if (data[i] <= data[2*i+1]) swap(data[i],data[2*i+1]); //swap with right child
+	int left_child = 2*i;
+	int right_child = 2*i+1;
+	if (data[i] <= data[left_child]) {
+		text_item temp = data[i];
+		data[i] = data[left_child];
+		data[left_child] = temp;
+	}
+	else if (data[i] <= data[right_child]) {
+		text_item temp = data[i];
+		data[i] = data[right_child];
+		data[right_child] = temp;
+	}
 }
 
 void max_heap::insert(const text_item & item) {
