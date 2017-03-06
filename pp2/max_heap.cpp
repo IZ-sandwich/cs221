@@ -44,9 +44,10 @@ text_item max_heap::delete_max() {
 	} else {
 		data[0] = data[size()-1];
 		numItems--;	
-		swap_down(0);		
+	
 		if (size()==0) return text_item{"",0};
-		else return top();
+		swap_down(0);
+		return top();
 	}
 }
 
@@ -55,7 +56,14 @@ void max_heap::swap_down(int i) {
 	if (i>=size()-1) return;
 	int left_child = 2*i+1;
 	int right_child = 2*i+2;
-	if (data[i].freq < data[left_child].freq) {
+	if (left_child >= size()) return;
+	if (right_child >= size() && left_child == size()) {
+		 text_item temp = data[i];
+		 data[i] = data[left_child];
+		 data[left_child] = data[i];
+		 return;
+	}
+	if ((data[i].freq < data[left_child].freq) && (data[left_child].freq > data[right_child].freq)) {
 		text_item temp = data[i];
 		data[i] = data[left_child];
 		data[left_child] = temp;
