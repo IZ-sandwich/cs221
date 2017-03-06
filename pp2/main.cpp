@@ -60,10 +60,17 @@ void heap_delete_tests(max_heap &hp) {
 		
 	// remove_max workd when swap_down with right child
 		// <INSERT TEST(S) HERE>
+	if (hp
 		
 	// remove_max on an empty heap (should throw exception similar to top())
 		// <INSERT TEST(S) HERE>
-		
+	if (hp.size() = 0) {
+			try {
+				hp.delete_max();
+			} catch (std::logic_error) {
+				std::cout << "Heap is empty, logic error thrown" << std::endl;
+			}
+	}
 }
 
 //--- PART 2: Implementation and testing of BST word_frequency
