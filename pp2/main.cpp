@@ -68,12 +68,12 @@ void heap_delete_tests(max_heap &hp) {
 	}	
 	// remove_max workd when swap_down with right child
 		// <INSERT TEST(S) HERE> 
-		
+	
 	// remove_max on an empty heap (should throw exception similar to top())
 		// <INSERT TEST(S) HERE>
-	if (hp.size() = 0) {
-			try {
-				hp.delete_max();
+	if (hp.size() == 0) {
+			try {	std::cout << "Testing deletion from an empty heap" << std::endl;
+				temp = hp.delete_max();
 			} catch (std::logic_error) {
 				std::cout << "Heap is empty, logic error thrown" << std::endl;
 			}
