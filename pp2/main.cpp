@@ -57,10 +57,14 @@ void heap_delete_tests(max_heap &hp) {
 	
 	// remove_max works when swap_down with left child
 		// <INSERT TEST(S) HERE>
-		
+	if ((hp.size() > 1)) {
+		temp = hp.delete_max();
+		std::cout << "Item returned from heap delete: "<< temp << std::endl;
+		temp = hp.top();
+		std::cout << "Top of heap is now: " << temp << std::endl;	
+	}	
 	// remove_max workd when swap_down with right child
-		// <INSERT TEST(S) HERE>
-	if (hp
+		// <INSERT TEST(S) HERE> 
 		
 	// remove_max on an empty heap (should throw exception similar to top())
 		// <INSERT TEST(S) HERE>
