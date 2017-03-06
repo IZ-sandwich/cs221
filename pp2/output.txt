@@ -1,0 +1,81 @@
+Created heap of size 10
+Current number of items in heap is: 0
+Heap is empty, can't access top!
+
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+adding item1,  with number 87 to heap
+Top of heap is: text_item{"item1",87}
+adding item2,  with number 93 to heap
+Top of heap is: text_item{"item2",93}
+adding item3,  with number 50 to heap
+Top of heap is: text_item{"item2",93}
+adding item4,  with number 83 to heap
+Top of heap is: text_item{"item2",93}
+adding item5,  with number 63 to heap
+Top of heap is: text_item{"item2",93}
+adding item0 with number 0 to heap
+Top of heap is: text_item{"item2",93}
+adding item101 with number 101 to heap
+Top of heap is: text_item{"item101",101}
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+Item returned from heap delete: text_item{"item2",93}
+Top of heap is now: text_item{"item2",93}
+Testing remove_max when swap_down with left child. Top of heap is currently text_item{"item109",109} and swapping with left child, freq=105
+Item returned from heap delete: text_item{"item105",105}
+Top of heap is now: text_item{"item105",105}
+Clearing the heap
+First time clearing the heap, about to remove text_item{"item105",105}
+First time clearing the heap, about to remove text_item{"item2",93}
+First time clearing the heap, about to remove text_item{"item1",87}
+First time clearing the heap, about to remove text_item{"item4",83}
+First time clearing the heap, about to remove text_item{"item5",63}
+First time clearing the heap, about to remove text_item{"item3",50}
+First time clearing the heap, about to remove text_item{"item0",0}
+The size of the max heap is now 0
+Testing remove_max when swap_down with right child. Top of heap is text_item{"item100",100} and left child is 30, right child is 50
+Item returned from heap delete: text_item{"item50",50}
+Top of heap is now: text_item{"item50",50}
+Clearing the heap
+about to delete text_item{"item50",50}
+about to delete text_item{"item31",31}
+about to delete text_item{"item30",30}
+about to delete text_item{"item29",29}
+about to delete text_item{"item28",28}
+ !!! hp size is now 0 !!!
+Testing deletion from an empty heap
+Heap is empty, logic error was correctly thrown
+
+BEGINNING TESTS FOR PART 2
+word freq, looking for: difficult
+Found: difficult in the input file 39 time(s).
+word freq, looking for: is
+Found: is in the input file 6134 time(s).
+word freq, looking for: when
+Found: when in the input file 1345 time(s).
+word freq, looking for: nope
+Found: nope in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+Most frequent text item: text_item{"the",40506}
+Next most frequent text item: text_item{"of",19652}
+Next most frequent text item: text_item{"and",14786}
+Next most frequent text item: text_item{"a",14315}
+Next most frequent text item: text_item{"to",13761}
+
+*** Top 5 most frequent words with at least 6 letters ***
+Most frequent text item (>=6): text_item{"marius",1347}
+Next most frequent text item (>=6): text_item{"valjean",1098}
+Next most frequent text item (>=6): text_item{"himself",1063}
+Next most frequent text item (>=6): text_item{"cosette",1000}
+Next most frequent text item (>=6): text_item{"little",971}
+
+*** Top 5 most frequent words that begin with c ***
+Most frequent text item (start=c): text_item{"cosette",1000}
+Next most frequent text item (start=c): text_item{"could",675}
+Next most frequent text item (start=c): text_item{"come",548}
+Next most frequent text item (start=c): text_item{"child",453}
+Next most frequent text item (start=c): text_item{"can",432}
