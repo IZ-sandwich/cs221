@@ -42,16 +42,26 @@ text_item max_heap::delete_max() {
 	if (empty()) {
 		throw std::logic_error("Cannot delete, heap is empty!");
 	} else {
-		swap(data[0],data[size()-1]);
+		text_item temp = data[0];
+		data[0] = data[size()-1];
+		data[size()-1] = temp;
 		top();
-		swap_down(data[0]);
+		int left = 1;
+		int right = 2;
+		int i=0;
+		while ((data[left]>data[i]) | (data[right]>data[i])) { 
+			swap_down(i);
+			i = i+1;
+			left = 2*i+1;
+			right = 2*i+2;
+		}
 	}
 }
 
 void max_heap::swap_down(int i) {
 	// ADD CODE HERE
-	int left_child = 2*i;
-	int right_child = 2*i+1;
+	int left_child = 2*i+1;
+	int right_child = 2*i+2;
 	if (data[i] <= data[left_child]) {
 		text_item temp = data[i];
 		data[i] = data[left_child];
