@@ -42,28 +42,22 @@ text_item max_heap::delete_max() {
 	if (empty()) {
 		throw std::logic_error("Cannot delete, heap is empty!");
 	} else {
-		// ADD CODE HERE
-		
-		// Fix this so it correctly deletes
-		// and maintains the heap-order property
-		// required for a max-heap
-		
-		// returning something so it compiles:
-		return top();
+		swap(data[0],data[size()-1]);
+		top();
+		swap_down(data[0]);
 	}
 }
 
 void max_heap::swap_down(int i) {
 	// ADD CODE HERE
-		
-	// Fix this so it correctly swaps
+	if (data[i] <= data[2*i]) swap(data[i],data[2*i]; //swap with left child
+	else if (data[i] <= data[2*i+1]) swap(data[i],data[2*i+1]); //swap with right child
 }
 
 void max_heap::insert(const text_item & item) {
 	if (full()) {
 		throw std::logic_error("Cannot insert, heap array is full!");
 	} else {
-		// ADD CODE HERE
 		
 		// Fix this so it correctly inserts
 		// and maintains the heap-order property
