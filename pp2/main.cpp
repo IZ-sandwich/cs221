@@ -191,6 +191,7 @@ void at_least_length(max_heap hp, size_t num_letters) {
 		else
 			std::cout << "Next most frequent text item (>=" << num_letters << "): "
 			<< hp.top() << std::endl;
+		hp.delete_max();
 	}
 
 	
