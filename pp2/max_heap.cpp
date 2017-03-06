@@ -68,6 +68,8 @@ void max_heap::insert(const text_item & item) {
 
 void max_heap::swap_up(int i) {
 	// ADD CODE HERE
-		
-	// Fix this so it correctly swaps
+	int parent = (i-1) / 2;
+	text_item temp = data[i];
+	data[i] = data[parent];
+	data[parent] = temp;
 }
