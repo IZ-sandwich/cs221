@@ -71,19 +71,42 @@ string_bst::node_t* string_bst::get_root() const {
 int string_bst::word_frequency(const tree_key &key) const {
 	
 	// ADD CODE HERE
+	std::cout << "word freq, looking for: " << key << std::endl;
 	node_t * current = get_root();
-	while (current->data.word != key && current != nullptr) {
-		if (current->left == nullptr)
-			current = current->right;
-		if (current->right == nullptr)
-			current = current->left;
-		if (key > current->left->data.word)
+	while (current != nullptr) {
+	/*// Debuging code
+	if (current != nullptr) {
+		std::cout << "key: " << current->data.word;
+		if (current->left != nullptr)
+			std::cout << " left: " << current->left->data.word;
+		else
+			std::cout << " NO LEFT";
+		if (current->right != nullptr)
+			std::cout << " right: " << current->right->data.word << std::endl;
+		else
+			std::cout << " NO RIGHT!" << std::endl;
+	}
+	else
+		std::cout << "got to a null!" << std::endl;
+		*/
+	// Logic code
+	if (current->data.word == key)
+		break;
+	if (current->left == nullptr)
+		current = current->right;
+	else if (current->right == nullptr)
+		current = current->left;
+	else {
+		int result = key.compare(current->data.word);
+		if (result > 0)
 			current = current->right;
 		else
 			current = current->left;
+		}
 	}
 	if (current == nullptr)
-		return 0;		
-	return current->data.freq;
+		return 0;
+	else
+		return current->data.freq;
 }
 

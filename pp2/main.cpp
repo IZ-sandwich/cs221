@@ -109,7 +109,7 @@ void tree_tester(string_bst const &tree) {
 		<< " time(s)." << std::endl;
 		
 	// returns 0 if word is not found
-	string to_find4 = "difficult";
+	string to_find4 = "nope";
 	int num_times4 = tree.word_frequency(to_find4);
 	std::cout << "Found: "<< to_find4 << 
 		" in the input file " << num_times4 
@@ -125,7 +125,13 @@ void overall_most_freq(max_heap hp) {
 	if (hp.size() > 1) {
 		std::cout << "Most frequent text item: " << hp.top() << std::endl;
 	}
-
+	hp.delete_max();
+	for (int i = 2; i < 6; i++) {
+		if (hp.size() == 0)
+				break;
+		std::cout << "Next most frequent text item: " << hp.top() << std::endl;
+		hp.delete_max();
+	}
 }
 
 void at_least_length(max_heap hp, size_t num_letters) {
@@ -134,6 +140,22 @@ void at_least_length(max_heap hp, size_t num_letters) {
 		
 	//--- Add code to print out the 5 most common
 	//--- words of length at least <num_letters>
+	for (int i = 0; i<5; i++) {
+		while(hp.size() > 1) {
+			if (hp.top().word.size() >= num_letters)
+				break;
+			else
+				hp.delete_max();
+		}
+		if (hp.size() == 0)
+			break;
+		if (i == 0)
+			std::cout << "Most frequent text item (>=" << num_letters << "): " 
+			<< hp.top() << std::endl;
+		else
+			std::cout << "Next most frequent text item (>=" << num_letters << "): "
+			<< hp.top() << std::endl;
+	}
 
 	
 }
@@ -176,7 +198,7 @@ void text_analysis_tester(string_bst &tree) {
 	std::cout << std::endl << "BEGINNING TESTS FOR PART 3" << std::endl;
 	overall_most_freq(copy_to_heap(tree));
 	std::cout << std::endl;
-	at_least_length(copy_to_heap(tree), 8); // change the 8 to test other string-lengths
+	at_least_length(copy_to_heap(tree), 6); // change the 8 to test other string-lengths
 	std::cout << std::endl;
 	starts_with(copy_to_heap(tree), 'c'); // change the 'c' to test words that starts_with_letter
 											// with different characters
@@ -189,7 +211,7 @@ int main(int argc, char* argv[]) {
 	
 	//--- Part 2: string_bst implementation
 	string_bst tree;
-	load_bst("sample1.txt", tree); // create a bst from an input file.
+	load_bst("sample2.txt", tree); // create a bst from an input file.
 	tree_tester(tree);			//sample2.txt contains a much bigger file
 	
 	//--- Part 3: word frequency analysis of text files
