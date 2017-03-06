@@ -60,23 +60,59 @@ void heap_delete_tests(max_heap &hp) {
 	
 	// remove_max works when swap_down with left child
 		// <INSERT TEST(S) HERE>
-	if ((hp.size() > 1)) {
+	if (hp.size() > 1) {
+		hp.insert(text_item{"item105",105});
+		hp.insert(text_item{"item109",109});
+		std::cout << "Testing remove_max when swap_down with left child. Top of heap is currently " <<  hp.top() << " and swapping with left child, freq=105" <<  std::endl;
 		temp = hp.delete_max();
-		std::cout << "Item returned from heap delete: "<< temp << std::endl;
+		std::cout << "Item returned from heap delete: " << temp << std::endl;
 		temp = hp.top();
-		std::cout << "Top of heap is now: " << temp << std::endl;	
-	}	
+		std::cout << "Top of heap is now: " << temp << std::endl;
+
+	}
+	// clear hp
+	std::cout << "Clearing the heap" << std::endl;
+	int m = hp.size();
+	for (int i=0; i<m;i++) {
+		std::cout << "First time clearing the heap, about to remove " << hp.top() << endl;
+		hp.delete_max();
+	}
+	
+	std::cout << "The size of the max heap is now " << hp.size()  <<std::endl;
 	// remove_max workd when swap_down with right child
 		// <INSERT TEST(S) HERE> 
+	// build up hp
+	hp.insert(text_item{"item100",100});
+	hp.insert(text_item{"item30",30});
+	hp.insert(text_item{"item50",50});
+	hp.insert(text_item{"item29",29});
+	hp.insert(text_item{"item28",28});
+	hp.insert(text_item{"item31",31});
+
+	std::cout << "Testing remove_max when swap_down with right child. Top of heap is " << hp.top() << " and left child is 30, right child is 50" << std::endl;
+	temp = hp.delete_max();
+	std::cout << "Item returned from heap delete: " << temp << std::endl;
+	temp = hp.top();
+	std::cout << "Top of heap is now: " << temp << std::endl;
 	
+
 	// remove_max on an empty heap (should throw exception similar to top())
 		// <INSERT TEST(S) HERE>
+	// clear hp again
+	std::cout << "Clearing the heap" << std::endl;
+	int n=hp.size();
+	for (int i=0; i<n;i++) {
+		std::cout << "about to delete " << hp.top() << endl;
+		hp.delete_max();
+	}
+	
+	std::cout << " !!! hp size is now " << hp.size() << " !!!"  << endl;
 	if (hp.size() == 0) {
-			try {	std::cout << "Testing deletion from an empty heap" << std::endl;
-				temp = hp.delete_max();
-			} catch (std::logic_error) {
-				std::cout << "Heap is empty, logic error thrown" << std::endl;
-			}
+		try {	std::cout << "Testing deletion from an empty heap" << std::endl;
+			hp.delete_max();
+		} catch (std::logic_error e) {
+			std::cout << "Heap is empty, logic error was correctly thrown" << std::endl;
+		}
 	}
 }
 

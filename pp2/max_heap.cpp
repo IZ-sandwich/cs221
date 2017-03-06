@@ -43,33 +43,37 @@ text_item max_heap::delete_max() {
 		throw std::logic_error("Cannot delete, heap is empty!");
 	} else {
 		data[0] = data[size()-1];
-		numItems--;
-		int left = 1;
-		int right = 2;
-		int i=0;
-		while (((data[left].freq>data[i].freq) || (data[right].freq>data[i].freq)) && (i<size())) { 
-			swap_down(i);
-			i = i+1;
-			left = 2*i+1;
-			right = 2*i+2;
-		}
+		numItems--;	
+	
+		if (size()==0) return text_item{"",0};
+		swap_down(0);
 		return top();
 	}
 }
 
 void max_heap::swap_down(int i) {
 	// ADD CODE HERE
+	if (i>=size()-1) return;
 	int left_child = 2*i+1;
 	int right_child = 2*i+2;
-	if (data[i].freq < data[left_child].freq) {
+	if (left_child >= size()) return;
+	if (right_child >= size() && left_child == size()) {
+		 text_item temp = data[i];
+		 data[i] = data[left_child];
+		 data[left_child] = data[i];
+		 return;
+	}
+	if ((data[i].freq < data[left_child].freq) && (data[left_child].freq > data[right_child].freq)) {
 		text_item temp = data[i];
 		data[i] = data[left_child];
 		data[left_child] = temp;
+		swap_down(left_child);
 	}
 	else if (data[i].freq < data[right_child].freq) {
 		text_item temp = data[i];
 		data[i] = data[right_child];
 		data[right_child] = temp;
+		swap_down(right_child);
 	}
 }
 
