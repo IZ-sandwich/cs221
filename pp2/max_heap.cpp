@@ -69,6 +69,11 @@ void max_heap::insert(const text_item & item) {
 		// and maintains the heap-order property
 		// required for a max-heap
 		data[numItems++] = item;
+		int current = numItems-1;
+		while (current != 0 && data[(current-1)/2].freq < data[current].freq) {
+			swap_up(current);
+			current = (current-1)/2;
+		}
 	}
 }
 

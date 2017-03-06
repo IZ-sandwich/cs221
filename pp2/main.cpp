@@ -33,10 +33,13 @@ void heap_insert_tests(max_heap &hp) {
 	//--- Specific insert functionality that should be tested:
 	
 	// insert without any swap_ups needed
-		// <INSERT TEST(S) HERE>
-		
+	hp.insert(text_item{"item0", 0});
+	std::cout << "adding item0 with number 0 to heap" << std::endl;	
+	std::cout << "Top of heap is: " << hp.top() << std::endl;		
 	// insert with a swap_up / multiple swap_ups
-		// <INSERT TEST(S) HERE>
+	hp.insert(text_item{"item101", 101});
+	std::cout << "adding item101 with number 101 to heap" << std::endl;	
+	std::cout << "Top of heap is: " << hp.top() << std::endl;		
 }
 
 //--- PART 1B: Implementation and testing of heap delete
