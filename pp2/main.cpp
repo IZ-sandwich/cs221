@@ -177,7 +177,7 @@ void at_least_length(max_heap hp, size_t num_letters) {
 	//--- Add code to print out the 5 most common
 	//--- words of length at least <num_letters>
 	for (int i = 0; i<5; i++) {
-		while(hp.size() > 1) {
+		while(hp.size() > 0) {
 			if (hp.top().word.size() >= num_letters)
 				break;
 			else
@@ -191,9 +191,8 @@ void at_least_length(max_heap hp, size_t num_letters) {
 		else
 			std::cout << "Next most frequent text item (>=" << num_letters << "): "
 			<< hp.top() << std::endl;
+		hp.delete_max();
 	}
-
-	
 }
 
 void starts_with(max_heap hp, char starts_with_letter) {
@@ -202,8 +201,23 @@ void starts_with(max_heap hp, char starts_with_letter) {
 		
 	//--- Add code to print out the 5 most common words
 	//--- that start with the letter <starts_with_letter>
-
-	
+	for (int i = 0; i<5; i++) {
+		while(hp.size() > 0) {
+			if (hp.top().word.at(0) == starts_with_letter)
+				break;
+			else
+				hp.delete_max();
+		}
+		if (hp.size() == 0)
+			break;
+		if (i == 0)
+			std::cout << "Most frequent text item (start=" << starts_with_letter << "): " 
+			<< hp.top() << std::endl;
+		else
+			std::cout << "Next most frequent text item (start=" << starts_with_letter << "): "
+			<< hp.top() << std::endl;
+		hp.delete_max();
+	}
 }
 
 void heap_tester() {	
