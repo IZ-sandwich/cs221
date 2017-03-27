@@ -11,11 +11,11 @@ if (argc != 2) // remember, argv[0] is the program name
 	}
 	int n = atoi(argv[1]);
 	for(int i = 1; i <= n/2; i++) {
-		cout << "I " << 10000*i << endl;
+		cout << "I " << 10001*i << endl;
 		//cout << "R " << put something here... << endl;
 	}
 	for (int i=1; i<=n/2; i++) {
-		cout << "F " << 10000*i << endl;
+		cout << "F " << 10001*i << endl;
 	}
 	return 0;
 }

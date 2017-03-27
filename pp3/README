@@ -2,9 +2,10 @@ Names:
 Chin (Jean) Chen   12714135  m4u9a
 Ivan Zinin         42108134  d9b0b
 
-This project took approximately __
-
+This project took approximately 6+_session2??????????????????????????????????????????_hours
 List of files: 
-	mapping.txt - contains mapping of data structures to mys
-	generator0  - 
-	generator1  - 
+	mapping.txt    - contains mapping of data structures to mys
+	generator0.cc  - basic generator that inserts some numbers in ascending order and finds the numbers in ascending order
+	generator1.cc  - insert random numbers, finds the same number over and over again, and finds random numbers
+	generator2.cc  - used to find which one is the hash table with chaining (comparing against results from generator0)
+	
