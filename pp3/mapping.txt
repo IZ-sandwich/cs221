@@ -1,6 +1,7 @@
-mtv,mys0
-sl,mys0
-hch,mys0
-bstT,mys0
-avl,mys0
-spt,mys0
+mtf,mys01
+sl,mys06
+hch,mys02
+hqp,mys03
+bstT,mys04
+avl,mys07
+spt,mys05
