@@ -14,9 +14,10 @@ if (argc != 2) // remember, argv[0] is the program name
 	}
 	unsigned int n = atoi(argv[1]);
 	
-	for(unsigned int i = 1; i < n/2; i++) {
+	for(unsigned int i = 1; i < n; i++) {
 		cout << "I " << i << endl;
-		cout << "R " << i << endl;
+		cout << "F " << i+2 << endl;
 	}
+
 	return 0;
 }
