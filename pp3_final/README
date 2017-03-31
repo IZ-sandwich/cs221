@@ -1,0 +1,20 @@
+Names:
+Chin (Jean) Chen   12714135  m4u9a
+Ivan Zinin         42108134  d9b0b
+
+This project took approximately 12 hours to complete
+
+Special instructions/notes:
+	We identified the different structures using Xgen*.cc (which produce hideous piecewise discontinuous graphs), then tried to do well in the competition with generator*.cc . 
+
+List of files: 
+	mapping.txt    - contains mapping of data structures to mys0x
+	Xgen0.cc  - basic generator that inserts some numbers in ascending order and finds the numbers in ascending order
+	Xgen1.cc  - inserts numbers in ascending order, finds random numbers (comparing against 
+	Xgen2.cc  - used to find which one is the hash table with chaining (comparing against results from generator0)
+	Xgen3.cc  - inserts/removes immediately in ascending order, used to find the bst with tombstones and the hashtable with double hashing
+	Xgen4.cc  - inserts in ascending order, finds the same value over and over again (used to single out move_to_front unsorted vector and the splay tree and comparing with gen1, can see which one is the avl tree (everything the avl tree does is O(nlogn) )
+	
+	generator*.cc - * encompasses 0, 1, 2, ..., 9, which are all generators similar to each other (a mixture of Insert, Remove, Find operations done in different combinations)
+
+
